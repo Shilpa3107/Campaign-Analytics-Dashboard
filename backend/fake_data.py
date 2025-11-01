@@ -7,16 +7,16 @@ def seed_data():
 
     if db.query(Campaign).count() == 0:  # Only seed if empty
         campaigns = [
-            {"name": "Summer Sale", "status": "Active", "clicks": 230, "cost": 1200, "impressions": 5400},
-            {"name": "Winter Bonanza", "status": "Paused", "clicks": 140, "cost": 850, "impressions": 3200},
-            {"name": "Festive Offers", "status": "Active", "clicks": 410, "cost": 1600, "impressions": 8000},
-            {"name": "New Year Blast", "status": "Active", "clicks": 300, "cost": 1300, "impressions": 6200},
-            {"name": "Monsoon Magic", "status": "Paused", "clicks": 120, "cost": 700, "impressions": 2900},
-            {"name": "Diwali Dhamaka", "status": "Active", "clicks": 500, "cost": 1800, "impressions": 8500},
-            {"name": "Valentine Vibes", "status": "Paused", "clicks": 200, "cost": 950, "impressions": 4000},
-            {"name": "Holi Hungama", "status": "Active", "clicks": 420, "cost": 1500, "impressions": 7800},
-            {"name": "Autumn Offers", "status": "Paused", "clicks": 110, "cost": 600, "impressions": 2500},
-            {"name": "Flash Friday", "status": "Active", "clicks": 450, "cost": 1700, "impressions": 8300},
+             {"id": 1, "name": "Summer Sale", "status": "Active", "clicks": 150, "cost": 45.99, "impressions": 1000},
+        {"id": 2, "name": "Black Friday", "status": "Paused", "clicks": 320, "cost": 89.50, "impressions": 2500},
+        {"id": 3, "name": "Winter Deals", "status": "Active", "clicks": 220, "cost": 60.20, "impressions": 1800},
+        {"id": 4, "name": "Festival Promo", "status": "Paused", "clicks": 440, "cost": 110.00, "impressions": 3000},
+        {"id": 5, "name": "End of Year Sale", "status": "Active", "clicks": 180, "cost": 55.80, "impressions": 1500},
+        {"id": 6, "name": "New Launch", "status": "Active", "clicks": 270, "cost": 72.50, "impressions": 2100},
+        {"id": 7, "name": "Special Offer", "status": "Paused", "clicks": 130, "cost": 35.20, "impressions": 900},
+        {"id": 8, "name": "Diwali Sale", "status": "Active", "clicks": 390, "cost": 140.10, "impressions": 3500},
+        {"id": 9, "name": "Holi Discounts", "status": "Paused", "clicks": 125, "cost": 50.75, "impressions": 1100},
+        {"id": 10, "name": "Limited Edition Drop", "status": "Active", "clicks": 520, "cost": 200.00, "impressions": 4800},
         ]
 
         for c in campaigns:
